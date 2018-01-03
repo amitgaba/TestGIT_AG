@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="TestGIT_AG.db::ZTEST_GIT_AG_MARA" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="ZTEST_GIT_AG_MARA"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="TestGIT_AG.db::MARA">
+    <resourceUri>TestGIT_AG.db::MARA</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="TestGIT_AG.db::MARA">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Client"/>
+      <keyMapping columnObjectName="MARA" columnName="MANDT"/>
+    </attribute>
+    <attribute id="MATNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Number"/>
+      <keyMapping columnObjectName="MARA" columnName="MATNR"/>
+    </attribute>
+    <attribute id="ERSDA" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Created On"/>
+      <keyMapping columnObjectName="MARA" columnName="ERSDA"/>
+    </attribute>
+    <attribute id="ERNAM" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Name of Person who Created the Object"/>
+      <keyMapping columnObjectName="MARA" columnName="ERNAM"/>
+    </attribute>
+    <attribute id="LAEDA" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Date of Last Change"/>
+      <keyMapping columnObjectName="MARA" columnName="LAEDA"/>
+    </attribute>
+    <attribute id="AENAM" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Name of Person Who Changed Object"/>
+      <keyMapping columnObjectName="MARA" columnName="AENAM"/>
+    </attribute>
+    <attribute id="VPSTA" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Maintenance status of complete material"/>
+      <keyMapping columnObjectName="MARA" columnName="VPSTA"/>
+    </attribute>
+    <attribute id="PSTAT" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Maintenance status"/>
+      <keyMapping columnObjectName="MARA" columnName="PSTAT"/>
+    </attribute>
+    <attribute id="LVORM" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Flag Material for Deletion at Client Level"/>
+      <keyMapping columnObjectName="MARA" columnName="LVORM"/>
+    </attribute>
+    <attribute id="MTART" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Type"/>
+      <keyMapping columnObjectName="MARA" columnName="MTART"/>
+    </attribute>
+    <attribute id="MBRSH" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Industry sector"/>
+      <keyMapping columnObjectName="MARA" columnName="MBRSH"/>
+    </attribute>
+    <attribute id="MATKL" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Group"/>
+      <keyMapping columnObjectName="MARA" columnName="MATKL"/>
+    </attribute>
+    <attribute id="BISMT" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Old material number"/>
+      <keyMapping columnObjectName="MARA" columnName="BISMT"/>
+    </attribute>
+    <attribute id="MEINS" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Base Unit of Measure"/>
+      <keyMapping columnObjectName="MARA" columnName="MEINS"/>
+    </attribute>
+    <attribute id="BSTME" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Purchase Order Unit of Measure"/>
+      <keyMapping columnObjectName="MARA" columnName="BSTME"/>
+    </attribute>
+    <attribute id="ZEINR" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Document number (without document management system)"/>
+      <keyMapping columnObjectName="MARA" columnName="ZEINR"/>
+    </attribute>
+    <attribute id="ZEIAR" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Document type (without Document Management system)"/>
+      <keyMapping columnObjectName="MARA" columnName="ZEIAR"/>
+    </attribute>
+    <attribute id="ZEIVR" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Document version (without Document Management system)"/>
+      <keyMapping columnObjectName="MARA" columnName="ZEIVR"/>
+    </attribute>
+    <attribute id="ZEIFO" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Page format of document (without Document Management system)"/>
+      <keyMapping columnObjectName="MARA" columnName="ZEIFO"/>
+    </attribute>
+    <attribute id="AESZN" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Document change number (without document management system)"/>
+      <keyMapping columnObjectName="MARA" columnName="AESZN"/>
+    </attribute>
+    <attribute id="BLATT" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Page number of document (without Document Management system)"/>
+      <keyMapping columnObjectName="MARA" columnName="BLATT"/>
+    </attribute>
+    <attribute id="BLANZ" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Number of sheets (without Document Management system)"/>
+      <keyMapping columnObjectName="MARA" columnName="BLANZ"/>
+    </attribute>
+    <attribute id="FERTH" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Production/inspection memo"/>
+      <keyMapping columnObjectName="MARA" columnName="FERTH"/>
+    </attribute>
+    <attribute id="FORMT" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Page Format of Production Memo"/>
+      <keyMapping columnObjectName="MARA" columnName="FORMT"/>
+    </attribute>
+    <attribute id="GROES" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Size/dimensions"/>
+      <keyMapping columnObjectName="MARA" columnName="GROES"/>
+    </attribute>
+    <attribute id="WRKST" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Basic Material"/>
+      <keyMapping columnObjectName="MARA" columnName="WRKST"/>
+    </attribute>
+    <attribute id="NORMT" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Industry Standard Description (such as ANSI or ISO)"/>
+      <keyMapping columnObjectName="MARA" columnName="NORMT"/>
+    </attribute>
+    <attribute id="LABOR" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Laboratory/design office"/>
+      <keyMapping columnObjectName="MARA" columnName="LABOR"/>
+    </attribute>
+    <attribute id="EKWSL" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Purchasing Value Key"/>
+      <keyMapping columnObjectName="MARA" columnName="EKWSL"/>
+    </attribute>
+    <attribute id="BRGEW" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Gross Weight"/>
+      <keyMapping columnObjectName="MARA" columnName="BRGEW"/>
+    </attribute>
+    <attribute id="NTGEW" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Net Weight"/>
+      <keyMapping columnObjectName="MARA" columnName="NTGEW"/>
+    </attribute>
+    <attribute id="GEWEI" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Weight Unit"/>
+      <keyMapping columnObjectName="MARA" columnName="GEWEI"/>
+    </attribute>
+    <attribute id="VOLUM" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Volume"/>
+      <keyMapping columnObjectName="MARA" columnName="VOLUM"/>
+    </attribute>
+    <attribute id="VOLEH" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Volume unit"/>
+      <keyMapping columnObjectName="MARA" columnName="VOLEH"/>
+    </attribute>
+    <attribute id="BEHVO" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Container requirements"/>
+      <keyMapping columnObjectName="MARA" columnName="BEHVO"/>
+    </attribute>
+    <attribute id="RAUBE" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Storage conditions"/>
+      <keyMapping columnObjectName="MARA" columnName="RAUBE"/>
+    </attribute>
+    <attribute id="TEMPB" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Temperature conditions indicator"/>
+      <keyMapping columnObjectName="MARA" columnName="TEMPB"/>
+    </attribute>
+    <attribute id="DISST" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Low-Level Code"/>
+      <keyMapping columnObjectName="MARA" columnName="DISST"/>
+    </attribute>
+    <attribute id="TRAGR" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Transportation Group"/>
+      <keyMapping columnObjectName="MARA" columnName="TRAGR"/>
+    </attribute>
+    <attribute id="STOFF" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Hazardous material number"/>
+      <keyMapping columnObjectName="MARA" columnName="STOFF"/>
+    </attribute>
+    <attribute id="SPART" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Division"/>
+      <keyMapping columnObjectName="MARA" columnName="SPART"/>
+    </attribute>
+    <attribute id="KUNNR" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Competitor"/>
+      <keyMapping columnObjectName="MARA" columnName="KUNNR"/>
+    </attribute>
+    <attribute id="EANNR" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="European Article Number (EAN) - obsolete!!!!!"/>
+      <keyMapping columnObjectName="MARA" columnName="EANNR"/>
+    </attribute>
+    <attribute id="WESCH" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Quantity: Number of GR/GI slips to be printed"/>
+      <keyMapping columnObjectName="MARA" columnName="WESCH"/>
+    </attribute>
+    <attribute id="BWVOR" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Procurement rule"/>
+      <keyMapping columnObjectName="MARA" columnName="BWVOR"/>
+    </attribute>
+    <attribute id="BWSCL" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Source of Supply"/>
+      <keyMapping columnObjectName="MARA" columnName="BWSCL"/>
+    </attribute>
+    <attribute id="SAISO" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Season Category"/>
+      <keyMapping columnObjectName="MARA" columnName="SAISO"/>
+    </attribute>
+    <attribute id="ETIAR" order="48" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Label type"/>
+      <keyMapping columnObjectName="MARA" columnName="ETIAR"/>
+    </attribute>
+    <attribute id="ETIFO" order="49" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Label form"/>
+      <keyMapping columnObjectName="MARA" columnName="ETIFO"/>
+    </attribute>
+    <attribute id="ENTAR" order="50" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Deactivated"/>
+      <keyMapping columnObjectName="MARA" columnName="ENTAR"/>
+    </attribute>
+    <attribute id="EAN11" order="51" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="International Article Number (EAN/UPC)"/>
+      <keyMapping columnObjectName="MARA" columnName="EAN11"/>
+    </attribute>
+    <attribute id="NUMTP" order="52" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Category of International Article Number (EAN)"/>
+      <keyMapping columnObjectName="MARA" columnName="NUMTP"/>
+    </attribute>
+    <attribute id="LAENG" order="53" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Length"/>
+      <keyMapping columnObjectName="MARA" columnName="LAENG"/>
+    </attribute>
+    <attribute id="BREIT" order="54" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Width"/>
+      <keyMapping columnObjectName="MARA" columnName="BREIT"/>
+    </attribute>
+    <attribute id="HOEHE" order="55" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Height"/>
+      <keyMapping columnObjectName="MARA" columnName="HOEHE"/>
+    </attribute>
+    <attribute id="MEABM" order="56" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Unit of Dimension for Length/Width/Height"/>
+      <keyMapping columnObjectName="MARA" columnName="MEABM"/>
+    </attribute>
+    <attribute id="PRDHA" order="57" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product hierarchy"/>
+      <keyMapping columnObjectName="MARA" columnName="PRDHA"/>
+    </attribute>
+    <attribute id="AEKLK" order="58" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Stock Transfer Net Change Costing"/>
+      <keyMapping columnObjectName="MARA" columnName="AEKLK"/>
+    </attribute>
+    <attribute id="CADKZ" order="59" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CAD Indicator"/>
+      <keyMapping columnObjectName="MARA" columnName="CADKZ"/>
+    </attribute>
+    <attribute id="QMPUR" order="60" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QM in Procurement is Active"/>
+      <keyMapping columnObjectName="MARA" columnName="QMPUR"/>
+    </attribute>
+    <attribute id="ERGEW" order="61" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Allowed packaging weight"/>
+      <keyMapping columnObjectName="MARA" columnName="ERGEW"/>
+    </attribute>
+    <attribute id="ERGEI" order="62" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Unit of weight (allowed packaging weight)"/>
+      <keyMapping columnObjectName="MARA" columnName="ERGEI"/>
+    </attribute>
+    <attribute id="ERVOL" order="63" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Allowed packaging volume"/>
+      <keyMapping columnObjectName="MARA" columnName="ERVOL"/>
+    </attribute>
+    <attribute id="ERVOE" order="64" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Volume unit (allowed packaging volume)"/>
+      <keyMapping columnObjectName="MARA" columnName="ERVOE"/>
+    </attribute>
+    <attribute id="GEWTO" order="65" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Excess Weight Tolerance for Handling unit"/>
+      <keyMapping columnObjectName="MARA" columnName="GEWTO"/>
+    </attribute>
+    <attribute id="VOLTO" order="66" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Excess Volume Tolerance of the Handling Unit"/>
+      <keyMapping columnObjectName="MARA" columnName="VOLTO"/>
+    </attribute>
+    <attribute id="VABME" order="67" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Variable Purchase Order Unit Active"/>
+      <keyMapping columnObjectName="MARA" columnName="VABME"/>
+    </attribute>
+    <attribute id="KZREV" order="68" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Revision Level Has Been Assigned to the Material"/>
+      <keyMapping columnObjectName="MARA" columnName="KZREV"/>
+    </attribute>
+    <attribute id="KZKFG" order="69" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Configurable Material"/>
+      <keyMapping columnObjectName="MARA" columnName="KZKFG"/>
+    </attribute>
+    <attribute id="XCHPF" order="70" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Batch management requirement indicator"/>
+      <keyMapping columnObjectName="MARA" columnName="XCHPF"/>
+    </attribute>
+    <attribute id="VHART" order="71" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Packaging Material Type"/>
+      <keyMapping columnObjectName="MARA" columnName="VHART"/>
+    </attribute>
+    <attribute id="FUELG" order="72" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Maximum level (by volume)"/>
+      <keyMapping columnObjectName="MARA" columnName="FUELG"/>
+    </attribute>
+    <attribute id="STFAK" order="73" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Stacking factor"/>
+      <keyMapping columnObjectName="MARA" columnName="STFAK"/>
+    </attribute>
+    <attribute id="MAGRV" order="74" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Group: Packaging Materials"/>
+      <keyMapping columnObjectName="MARA" columnName="MAGRV"/>
+    </attribute>
+    <attribute id="BEGRU" order="75" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Authorization Group"/>
+      <keyMapping columnObjectName="MARA" columnName="BEGRU"/>
+    </attribute>
+    <attribute id="DATAB" order="76" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Valid-From Date"/>
+      <keyMapping columnObjectName="MARA" columnName="DATAB"/>
+    </attribute>
+    <attribute id="LIQDT" order="77" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Deletion date"/>
+      <keyMapping columnObjectName="MARA" columnName="LIQDT"/>
+    </attribute>
+    <attribute id="SAISJ" order="78" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Season Year"/>
+      <keyMapping columnObjectName="MARA" columnName="SAISJ"/>
+    </attribute>
+    <attribute id="PLGTP" order="79" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Price Band Category"/>
+      <keyMapping columnObjectName="MARA" columnName="PLGTP"/>
+    </attribute>
+    <attribute id="MLGUT" order="80" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Empties Bill of Material"/>
+      <keyMapping columnObjectName="MARA" columnName="MLGUT"/>
+    </attribute>
+    <attribute id="EXTWG" order="81" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Service Hierarchy"/>
+      <keyMapping columnObjectName="MARA" columnName="EXTWG"/>
+    </attribute>
+    <attribute id="SATNR" order="82" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Cross-Plant Configurable Material"/>
+      <keyMapping columnObjectName="MARA" columnName="SATNR"/>
+    </attribute>
+    <attribute id="ATTYP" order="83" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Category"/>
+      <keyMapping columnObjectName="MARA" columnName="ATTYP"/>
+    </attribute>
+    <attribute id="KZKUP" order="84" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: Material can be co-product"/>
+      <keyMapping columnObjectName="MARA" columnName="KZKUP"/>
+    </attribute>
+    <attribute id="KZNFM" order="85" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: The material has a follow-up material"/>
+      <keyMapping columnObjectName="MARA" columnName="KZNFM"/>
+    </attribute>
+    <attribute id="PMATA" order="86" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Pricing Reference Material"/>
+      <keyMapping columnObjectName="MARA" columnName="PMATA"/>
+    </attribute>
+    <attribute id="MSTAE" order="87" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Cross-Plant Material Status"/>
+      <keyMapping columnObjectName="MARA" columnName="MSTAE"/>
+    </attribute>
+    <attribute id="MSTAV" order="88" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Cross-distribution-chain material status"/>
+      <keyMapping columnObjectName="MARA" columnName="MSTAV"/>
+    </attribute>
+    <attribute id="MSTDE" order="89" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Date from which the cross-plant material status is valid"/>
+      <keyMapping columnObjectName="MARA" columnName="MSTDE"/>
+    </attribute>
+    <attribute id="MSTDV" order="90" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Date from which the X-distr.-chain material status is valid"/>
+      <keyMapping columnObjectName="MARA" columnName="MSTDV"/>
+    </attribute>
+    <attribute id="TAKLV" order="91" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Tax classification of the material"/>
+      <keyMapping columnObjectName="MARA" columnName="TAKLV"/>
+    </attribute>
+    <attribute id="RBNRM" order="92" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Catalog Profile"/>
+      <keyMapping columnObjectName="MARA" columnName="RBNRM"/>
+    </attribute>
+    <attribute id="MHDRZ" order="93" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Minimum Remaining Shelf Life"/>
+      <keyMapping columnObjectName="MARA" columnName="MHDRZ"/>
+    </attribute>
+    <attribute id="MHDHB" order="94" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Total shelf life"/>
+      <keyMapping columnObjectName="MARA" columnName="MHDHB"/>
+    </attribute>
+    <attribute id="MHDLP" order="95" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Storage percentage"/>
+      <keyMapping columnObjectName="MARA" columnName="MHDLP"/>
+    </attribute>
+    <attribute id="INHME" order="96" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Content unit"/>
+      <keyMapping columnObjectName="MARA" columnName="INHME"/>
+    </attribute>
+    <attribute id="INHAL" order="97" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Net contents"/>
+      <keyMapping columnObjectName="MARA" columnName="INHAL"/>
+    </attribute>
+    <attribute id="VPREH" order="98" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Comparison price unit"/>
+      <keyMapping columnObjectName="MARA" columnName="VPREH"/>
+    </attribute>
+    <attribute id="ETIAG" order="99" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="IS-R Labeling: material grouping (deactivated in 4.0)"/>
+      <keyMapping columnObjectName="MARA" columnName="ETIAG"/>
+    </attribute>
+    <attribute id="INHBR" order="100" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Gross contents"/>
+      <keyMapping columnObjectName="MARA" columnName="INHBR"/>
+    </attribute>
+    <attribute id="CMETH" order="101" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Quantity Conversion Method"/>
+      <keyMapping columnObjectName="MARA" columnName="CMETH"/>
+    </attribute>
+    <attribute id="CUOBF" order="102" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Internal object number"/>
+      <keyMapping columnObjectName="MARA" columnName="CUOBF"/>
+    </attribute>
+    <attribute id="KZUMW" order="103" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Environmentally Relevant"/>
+      <keyMapping columnObjectName="MARA" columnName="KZUMW"/>
+    </attribute>
+    <attribute id="KOSCH" order="104" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product allocation determination procedure"/>
+      <keyMapping columnObjectName="MARA" columnName="KOSCH"/>
+    </attribute>
+    <attribute id="SPROF" order="105" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Pricing profile for variants"/>
+      <keyMapping columnObjectName="MARA" columnName="SPROF"/>
+    </attribute>
+    <attribute id="NRFHG" order="106" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material qualifies for discount in kind"/>
+      <keyMapping columnObjectName="MARA" columnName="NRFHG"/>
+    </attribute>
+    <attribute id="MFRPN" order="107" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Manufacturer Part Number"/>
+      <keyMapping columnObjectName="MARA" columnName="MFRPN"/>
+    </attribute>
+    <attribute id="MFRNR" order="108" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Number of a Manufacturer"/>
+      <keyMapping columnObjectName="MARA" columnName="MFRNR"/>
+    </attribute>
+    <attribute id="BMATN" order="109" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Number of firm&apos;s own (internal) inventory-managed material"/>
+      <keyMapping columnObjectName="MARA" columnName="BMATN"/>
+    </attribute>
+    <attribute id="MPROF" order="110" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Manufacturer Part Profile"/>
+      <keyMapping columnObjectName="MARA" columnName="MPROF"/>
+    </attribute>
+    <attribute id="KZWSM" order="111" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Units of measure usage"/>
+      <keyMapping columnObjectName="MARA" columnName="KZWSM"/>
+    </attribute>
+    <attribute id="SAITY" order="112" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Rollout in a Season"/>
+      <keyMapping columnObjectName="MARA" columnName="SAITY"/>
+    </attribute>
+    <attribute id="PROFL" order="113" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Dangerous Goods Indicator Profile"/>
+      <keyMapping columnObjectName="MARA" columnName="PROFL"/>
+    </attribute>
+    <attribute id="IHIVI" order="114" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: Highly Viscous"/>
+      <keyMapping columnObjectName="MARA" columnName="IHIVI"/>
+    </attribute>
+    <attribute id="ILOOS" order="115" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: In Bulk/Liquid"/>
+      <keyMapping columnObjectName="MARA" columnName="ILOOS"/>
+    </attribute>
+    <attribute id="SERLV" order="116" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Level of Explicitness for Serial Number"/>
+      <keyMapping columnObjectName="MARA" columnName="SERLV"/>
+    </attribute>
+    <attribute id="KZGVH" order="117" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Packaging Material is Closed Packaging"/>
+      <keyMapping columnObjectName="MARA" columnName="KZGVH"/>
+    </attribute>
+    <attribute id="XGCHP" order="118" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: Approved batch record required"/>
+      <keyMapping columnObjectName="MARA" columnName="XGCHP"/>
+    </attribute>
+    <attribute id="KZEFF" order="119" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Assign effectivity parameter values/ override change numbers"/>
+      <keyMapping columnObjectName="MARA" columnName="KZEFF"/>
+    </attribute>
+    <attribute id="COMPL" order="120" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material completion level"/>
+      <keyMapping columnObjectName="MARA" columnName="COMPL"/>
+    </attribute>
+    <attribute id="IPRKZ" order="121" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Period Indicator for Shelf Life Expiration Date"/>
+      <keyMapping columnObjectName="MARA" columnName="IPRKZ"/>
+    </attribute>
+    <attribute id="RDMHD" order="122" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Rounding rule for calculation of SLED"/>
+      <keyMapping columnObjectName="MARA" columnName="RDMHD"/>
+    </attribute>
+    <attribute id="PRZUS" order="123" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: Product composition printed on packaging"/>
+      <keyMapping columnObjectName="MARA" columnName="PRZUS"/>
+    </attribute>
+    <attribute id="MTPOS_MARA" order="124" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="General item category group"/>
+      <keyMapping columnObjectName="MARA" columnName="MTPOS_MARA"/>
+    </attribute>
+    <attribute id="BFLME" order="125" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Generic Material with Logistical Variants"/>
+      <keyMapping columnObjectName="MARA" columnName="BFLME"/>
+    </attribute>
+    <attribute id="MATFI" order="126" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Is Locked"/>
+      <keyMapping columnObjectName="MARA" columnName="MATFI"/>
+    </attribute>
+    <attribute id="CMREL" order="127" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Relevant for Configuration Management"/>
+      <keyMapping columnObjectName="MARA" columnName="CMREL"/>
+    </attribute>
+    <attribute id="BBTYP" order="128" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Assortment List Type"/>
+      <keyMapping columnObjectName="MARA" columnName="BBTYP"/>
+    </attribute>
+    <attribute id="SLED_BBD" order="129" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Expiration Date"/>
+      <keyMapping columnObjectName="MARA" columnName="SLED_BBD"/>
+    </attribute>
+    <attribute id="GTIN_VARIANT" order="130" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Global Trade Item Number Variant"/>
+      <keyMapping columnObjectName="MARA" columnName="GTIN_VARIANT"/>
+    </attribute>
+    <attribute id="GENNR" order="131" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Number of the Generic Material in Prepack Materials"/>
+      <keyMapping columnObjectName="MARA" columnName="GENNR"/>
+    </attribute>
+    <attribute id="RMATP" order="132" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Reference material for materials packed in same way"/>
+      <keyMapping columnObjectName="MARA" columnName="RMATP"/>
+    </attribute>
+    <attribute id="GDS_RELEVANT" order="133" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: Global Data Synchronization-Relevant"/>
+      <keyMapping columnObjectName="MARA" columnName="GDS_RELEVANT"/>
+    </attribute>
+    <attribute id="WEORA" order="134" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Acceptance At Origin"/>
+      <keyMapping columnObjectName="MARA" columnName="WEORA"/>
+    </attribute>
+    <attribute id="HUTYP_DFLT" order="135" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Standard HU Type"/>
+      <keyMapping columnObjectName="MARA" columnName="HUTYP_DFLT"/>
+    </attribute>
+    <attribute id="PILFERABLE" order="136" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Pilferable"/>
+      <keyMapping columnObjectName="MARA" columnName="PILFERABLE"/>
+    </attribute>
+    <attribute id="WHSTC" order="137" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Warehouse Storage Condition"/>
+      <keyMapping columnObjectName="MARA" columnName="WHSTC"/>
+    </attribute>
+    <attribute id="WHMATGR" order="138" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Warehouse Material Group"/>
+      <keyMapping columnObjectName="MARA" columnName="WHMATGR"/>
+    </attribute>
+    <attribute id="HNDLCODE" order="139" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Handling Indicator"/>
+      <keyMapping columnObjectName="MARA" columnName="HNDLCODE"/>
+    </attribute>
+    <attribute id="HAZMAT" order="140" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Relevant for Hazardous Substances"/>
+      <keyMapping columnObjectName="MARA" columnName="HAZMAT"/>
+    </attribute>
+    <attribute id="HUTYP" order="141" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Handling Unit Type"/>
+      <keyMapping columnObjectName="MARA" columnName="HUTYP"/>
+    </attribute>
+    <attribute id="TARE_VAR" order="142" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Variable Tare Weight"/>
+      <keyMapping columnObjectName="MARA" columnName="TARE_VAR"/>
+    </attribute>
+    <attribute id="MAXC" order="143" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Maximum Allowed Capacity of Packaging Material"/>
+      <keyMapping columnObjectName="MARA" columnName="MAXC"/>
+    </attribute>
+    <attribute id="MAXC_TOL" order="144" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Overcapacity Tolerance of the Handling Unit"/>
+      <keyMapping columnObjectName="MARA" columnName="MAXC_TOL"/>
+    </attribute>
+    <attribute id="MAXL" order="145" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Maximum Packing Length of Packaging Material"/>
+      <keyMapping columnObjectName="MARA" columnName="MAXL"/>
+    </attribute>
+    <attribute id="MAXB" order="146" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Maximum Packing Width of Packaging Material"/>
+      <keyMapping columnObjectName="MARA" columnName="MAXB"/>
+    </attribute>
+    <attribute id="MAXH" order="147" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Maximum Packing Height of Packaging Material"/>
+      <keyMapping columnObjectName="MARA" columnName="MAXH"/>
+    </attribute>
+    <attribute id="MAXDIM_UOM" order="148" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Unit of Measure for Maximum Packing Length/Width/Height"/>
+      <keyMapping columnObjectName="MARA" columnName="MAXDIM_UOM"/>
+    </attribute>
+    <attribute id="HERKL" order="149" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country of origin of the material"/>
+      <keyMapping columnObjectName="MARA" columnName="HERKL"/>
+    </attribute>
+    <attribute id="MFRGR" order="150" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material freight group"/>
+      <keyMapping columnObjectName="MARA" columnName="MFRGR"/>
+    </attribute>
+    <attribute id="QQTIME" order="151" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Quarantine Period"/>
+      <keyMapping columnObjectName="MARA" columnName="QQTIME"/>
+    </attribute>
+    <attribute id="QQTIMEUOM" order="152" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Time Unit for Quarantine Period"/>
+      <keyMapping columnObjectName="MARA" columnName="QQTIMEUOM"/>
+    </attribute>
+    <attribute id="QGRP" order="153" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Quality Inspection Group"/>
+      <keyMapping columnObjectName="MARA" columnName="QGRP"/>
+    </attribute>
+    <attribute id="SERIAL" order="154" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Serial Number Profile"/>
+      <keyMapping columnObjectName="MARA" columnName="SERIAL"/>
+    </attribute>
+    <attribute id="PS_SMARTFORM" order="155" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Form Name"/>
+      <keyMapping columnObjectName="MARA" columnName="PS_SMARTFORM"/>
+    </attribute>
+    <attribute id="LOGUNIT" order="156" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EWM CW: Logistics Unit of Measure"/>
+      <keyMapping columnObjectName="MARA" columnName="LOGUNIT"/>
+    </attribute>
+    <attribute id="CWQREL" order="157" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EWM CW: Material Is a Catch Weight Material"/>
+      <keyMapping columnObjectName="MARA" columnName="CWQREL"/>
+    </attribute>
+    <attribute id="CWQPROC" order="158" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EWM CW: Catch Weight Profile for Entering CW Quantity"/>
+      <keyMapping columnObjectName="MARA" columnName="CWQPROC"/>
+    </attribute>
+    <attribute id="CWQTOLGR" order="159" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EWM-CW: Catch Weight Tolerance Group for EWM"/>
+      <keyMapping columnObjectName="MARA" columnName="CWQTOLGR"/>
+    </attribute>
+    <attribute id="ADPROF" order="160" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Adjustment Profile"/>
+      <keyMapping columnObjectName="MARA" columnName="ADPROF"/>
+    </attribute>
+    <attribute id="IPMIPPRODUCT" order="161" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ID for an Intellectual Property (CRM Product)"/>
+      <keyMapping columnObjectName="MARA" columnName="IPMIPPRODUCT"/>
+    </attribute>
+    <attribute id="ALLOW_PMAT_IGNO" order="162" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Variant Price Allowed (for Material Master)"/>
+      <keyMapping columnObjectName="MARA" columnName="ALLOW_PMAT_IGNO"/>
+    </attribute>
+    <attribute id="MEDIUM" order="163" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Medium"/>
+      <keyMapping columnObjectName="MARA" columnName="MEDIUM"/>
+    </attribute>
+    <attribute id="COMMODITY" order="164" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Physical Commodity"/>
+      <keyMapping columnObjectName="MARA" columnName="COMMODITY"/>
+    </attribute>
+    <attribute id="ANIMAL_ORIGIN" order="165" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: Contains Non-Textile Parts of Animal Origin"/>
+      <keyMapping columnObjectName="MARA" columnName="ANIMAL_ORIGIN"/>
+    </attribute>
+    <attribute id="TEXTILE_COMP_IND" order="166" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: New Textile Composition Function"/>
+      <keyMapping columnObjectName="MARA" columnName="TEXTILE_COMP_IND"/>
+    </attribute>
+    <attribute id="SGT_CSGR" order="167" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Segmentation Structure"/>
+      <keyMapping columnObjectName="MARA" columnName="SGT_CSGR"/>
+    </attribute>
+    <attribute id="SGT_COVSA" order="168" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Segmentation Strategy"/>
+      <keyMapping columnObjectName="MARA" columnName="SGT_COVSA"/>
+    </attribute>
+    <attribute id="SGT_STAT" order="169" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Segmentation Material Master Status"/>
+      <keyMapping columnObjectName="MARA" columnName="SGT_STAT"/>
+    </attribute>
+    <attribute id="SGT_SCOPE" order="170" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Segmentation Strategy Scope"/>
+      <keyMapping columnObjectName="MARA" columnName="SGT_SCOPE"/>
+    </attribute>
+    <attribute id="SGT_REL" order="171" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Segmentation Relevant"/>
+      <keyMapping columnObjectName="MARA" columnName="SGT_REL"/>
+    </attribute>
+    <attribute id="ANP" order="172" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANP Code"/>
+      <keyMapping columnObjectName="MARA" columnName="ANP"/>
+    </attribute>
+    <attribute id="FSH_MG_AT1" order="173" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fashion Information Field: 1"/>
+      <keyMapping columnObjectName="MARA" columnName="FSH_MG_AT1"/>
+    </attribute>
+    <attribute id="FSH_MG_AT2" order="174" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fashion Information Field: 2"/>
+      <keyMapping columnObjectName="MARA" columnName="FSH_MG_AT2"/>
+    </attribute>
+    <attribute id="FSH_MG_AT3" order="175" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fashion Information Field: 3"/>
+      <keyMapping columnObjectName="MARA" columnName="FSH_MG_AT3"/>
+    </attribute>
+    <attribute id="FSH_SEALV" order="176" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: Use of Season"/>
+      <keyMapping columnObjectName="MARA" columnName="FSH_SEALV"/>
+    </attribute>
+    <attribute id="FSH_SEAIM" order="177" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Indicator: Season Active in Inventory Management"/>
+      <keyMapping columnObjectName="MARA" columnName="FSH_SEAIM"/>
+    </attribute>
+    <attribute id="FSH_SC_MID" order="178" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Conversion ID for Characteristic Value Conversion"/>
+      <keyMapping columnObjectName="MARA" columnName="FSH_SC_MID"/>
+    </attribute>
+    <attribute id="PSM_CODE" order="179" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Code of Protected Species Management"/>
+      <keyMapping columnObjectName="MARA" columnName="PSM_CODE"/>
+    </attribute>
+    <attribute id="_BEV1_LULEINH" order="180" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Loading Units"/>
+      <keyMapping columnObjectName="MARA" columnName="/BEV1/LULEINH"/>
+    </attribute>
+    <attribute id="_BEV1_LULDEGRP" order="181" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Loading Unit Group: IS Beverage"/>
+      <keyMapping columnObjectName="MARA" columnName="/BEV1/LULDEGRP"/>
+    </attribute>
+    <attribute id="_BEV1_NESTRUCCAT" order="182" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Structure Category for Material Relationship"/>
+      <keyMapping columnObjectName="MARA" columnName="/BEV1/NESTRUCCAT"/>
+    </attribute>
+    <attribute id="_DSD_SL_TOLTYP" order="183" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Tolerance Type ID"/>
+      <keyMapping columnObjectName="MARA" columnName="/DSD/SL_TOLTYP"/>
+    </attribute>
+    <attribute id="_DSD_SV_CNT_GRP" order="184" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Counting Group"/>
+      <keyMapping columnObjectName="MARA" columnName="/DSD/SV_CNT_GRP"/>
+    </attribute>
+    <attribute id="_DSD_VC_GROUP" order="185" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DSD Grouping"/>
+      <keyMapping columnObjectName="MARA" columnName="/DSD/VC_GROUP"/>
+    </attribute>
+    <attribute id="_VSO_R_TILT_IND" order="186" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material may be Tilted (Vehicle Space Optimization)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_TILT_IND"/>
+    </attribute>
+    <attribute id="_VSO_R_STACK_IND" order="187" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Stacking not Allowed (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_STACK_IND"/>
+    </attribute>
+    <attribute id="_VSO_R_BOT_IND" order="188" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Bottom Layer (Vehicle Space Optimization)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_BOT_IND"/>
+    </attribute>
+    <attribute id="_VSO_R_TOP_IND" order="189" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Top Layer (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_TOP_IND"/>
+    </attribute>
+    <attribute id="_VSO_R_STACK_NO" order="190" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Stacking Factor (Vehicle Space Optimization)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_STACK_NO"/>
+    </attribute>
+    <attribute id="_VSO_R_PAL_IND" order="191" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Load without Packaging Material (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_PAL_IND"/>
+    </attribute>
+    <attribute id="_VSO_R_PAL_OVR_D" order="192" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Permissible Overhang (Depth) of Packaging Material (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_PAL_OVR_D"/>
+    </attribute>
+    <attribute id="_VSO_R_PAL_OVR_W" order="193" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Permissible Overhang (Width) of Shipping Material (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_PAL_OVR_W"/>
+    </attribute>
+    <attribute id="_VSO_R_PAL_B_HT" order="194" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Maximum Stacking Height of the Packaging Material (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_PAL_B_HT"/>
+    </attribute>
+    <attribute id="_VSO_R_PAL_MIN_H" order="195" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Minimum Stacking Height of the Packaging Material (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_PAL_MIN_H"/>
+    </attribute>
+    <attribute id="_VSO_R_TOL_B_HT" order="196" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Tolerance to Exceed the Max. Stacking Height (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_TOL_B_HT"/>
+    </attribute>
+    <attribute id="_VSO_R_NO_P_GVH" order="197" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Number of Materials for each Closed PKM (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_NO_P_GVH"/>
+    </attribute>
+    <attribute id="_VSO_R_QUAN_UNIT" order="198" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Unit of Measure Vehicle Space Optimization"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_QUAN_UNIT"/>
+    </attribute>
+    <attribute id="_VSO_R_KZGVH_IND" order="199" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Closed Packaging Material Required (VSO)"/>
+      <keyMapping columnObjectName="MARA" columnName="/VSO/R_KZGVH_IND"/>
+    </attribute>
+    <attribute id="PACKCODE" order="200" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Packaging Code"/>
+      <keyMapping columnObjectName="MARA" columnName="PACKCODE"/>
+    </attribute>
+    <attribute id="DG_PACK_STATUS" order="201" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Dangerous Goods Packaging Status"/>
+      <keyMapping columnObjectName="MARA" columnName="DG_PACK_STATUS"/>
+    </attribute>
+    <attribute id="MCOND" order="202" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Condition Management"/>
+      <keyMapping columnObjectName="MARA" columnName="MCOND"/>
+    </attribute>
+    <attribute id="RETDELC" order="203" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Return Code"/>
+      <keyMapping columnObjectName="MARA" columnName="RETDELC"/>
+    </attribute>
+    <attribute id="LOGLEV_RETO" order="204" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Return to Logistics Level"/>
+      <keyMapping columnObjectName="MARA" columnName="LOGLEV_RETO"/>
+    </attribute>
+    <attribute id="NSNID" order="205" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NATO Item Identification Number"/>
+      <keyMapping columnObjectName="MARA" columnName="NSNID"/>
+    </attribute>
+    <attribute id="IMATN" order="206" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FFF class"/>
+      <keyMapping columnObjectName="MARA" columnName="IMATN"/>
+    </attribute>
+    <attribute id="PICNUM" order="207" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Supersession chain number"/>
+      <keyMapping columnObjectName="MARA" columnName="PICNUM"/>
+    </attribute>
+    <attribute id="BSTAT" order="208" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Creation Status - Seasonal Procurement"/>
+      <keyMapping columnObjectName="MARA" columnName="BSTAT"/>
+    </attribute>
+    <attribute id="COLOR_ATINN" order="209" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Internal Charactieristic Number for Color Characteristics"/>
+      <keyMapping columnObjectName="MARA" columnName="COLOR_ATINN"/>
+    </attribute>
+    <attribute id="SIZE1_ATINN" order="210" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Internal Char. Number for Characteristics for Main Sizes"/>
+      <keyMapping columnObjectName="MARA" columnName="SIZE1_ATINN"/>
+    </attribute>
+    <attribute id="SIZE2_ATINN" order="211" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Internal Char. Number for Characteristics for Second Sizes"/>
+      <keyMapping columnObjectName="MARA" columnName="SIZE2_ATINN"/>
+    </attribute>
+    <attribute id="COLOR" order="212" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Characteristic Value for Colors of Variants"/>
+      <keyMapping columnObjectName="MARA" columnName="COLOR"/>
+    </attribute>
+    <attribute id="SIZE1" order="213" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Characteristic Value for Main Sizes of Variants"/>
+      <keyMapping columnObjectName="MARA" columnName="SIZE1"/>
+    </attribute>
+    <attribute id="SIZE2" order="214" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Characteristic Value for Second Size for Variants"/>
+      <keyMapping columnObjectName="MARA" columnName="SIZE2"/>
+    </attribute>
+    <attribute id="FREE_CHAR" order="215" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Characteristic Value for Evaluation Purposes"/>
+      <keyMapping columnObjectName="MARA" columnName="FREE_CHAR"/>
+    </attribute>
+    <attribute id="CARE_CODE" order="216" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Care Codes (such as Washing Code, Ironing Code, etc.)"/>
+      <keyMapping columnObjectName="MARA" columnName="CARE_CODE"/>
+    </attribute>
+    <attribute id="BRAND_ID" order="217" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Brand"/>
+      <keyMapping columnObjectName="MARA" columnName="BRAND_ID"/>
+    </attribute>
+    <attribute id="FIBER_CODE1" order="218" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fiber Code for Textiles (Component 1)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_CODE1"/>
+    </attribute>
+    <attribute id="FIBER_PART1" order="219" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Percentage Share of Fiber (Component 1)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_PART1"/>
+    </attribute>
+    <attribute id="FIBER_CODE2" order="220" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fiber Code for Textiles (Component 2)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_CODE2"/>
+    </attribute>
+    <attribute id="FIBER_PART2" order="221" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Percentage Share of Fiber (Component 2)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_PART2"/>
+    </attribute>
+    <attribute id="FIBER_CODE3" order="222" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fiber Code for Textiles (Component 3)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_CODE3"/>
+    </attribute>
+    <attribute id="FIBER_PART3" order="223" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Percentage Share of Fiber (Component 3)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_PART3"/>
+    </attribute>
+    <attribute id="FIBER_CODE4" order="224" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fiber Code for Textiles (Component 4)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_CODE4"/>
+    </attribute>
+    <attribute id="FIBER_PART4" order="225" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Percentage Share of Fiber (Component 4)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_PART4"/>
+    </attribute>
+    <attribute id="FIBER_CODE5" order="226" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fiber Code for Textiles (Component 5)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_CODE5"/>
+    </attribute>
+    <attribute id="FIBER_PART5" order="227" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Percentage Share of Fiber (Component 5)"/>
+      <keyMapping columnObjectName="MARA" columnName="FIBER_PART5"/>
+    </attribute>
+    <attribute id="FASHGRD" order="228" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fashion Grade"/>
+      <keyMapping columnObjectName="MARA" columnName="FASHGRD"/>
+    </attribute>
+    <attribute id="ZSPRPL" order="229" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Spare Parts List"/>
+      <keyMapping columnObjectName="MARA" columnName="ZSPRPL"/>
+    </attribute>
+    <attribute id="Z_1264_MOCT" order="230" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material owner"/>
+      <keyMapping columnObjectName="MARA" columnName="Z_1264_MOCT"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

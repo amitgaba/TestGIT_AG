@@ -1,0 +1,8 @@
+{
+    "TestGIT_AG.db::MARA": {
+        "target": {
+            "schema": "OE1_CLNT_100",
+            "object": "MARA"
+        }
+    }
+}
